@@ -1,0 +1,13 @@
+#ifndef _PAGING_H
+#define _PAGING_H
+
+#define NUMBER_OF_PAGES 4
+#define NUMBER_OF_ENTRIES_PER_PAGE_TABLE 1024
+#define NUMBER_OF_ENTRIES_PER_PAGE_DIRECTORY 1024
+#define SIZE_OF_PAGE_TABLES (NUMBER_OF_PAGES * NUMBER_OF_ENTRIES_PER_PAGE_TABLE)
+
+#include <types.h>
+
+void enablePaging();
+
+#endif
